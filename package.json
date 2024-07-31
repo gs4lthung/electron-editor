@@ -1,0 +1,17 @@
+{
+  "name": "electron-editor",
+  "version": "1.0.0",
+  "description": "A text editor built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "author": "Lam Tien Hung",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1"
+  }
+}
