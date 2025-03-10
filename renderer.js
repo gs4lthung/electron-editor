@@ -11,3 +11,24 @@ document.addEventListener("keydown", async (e) => {
     if (filePath) alert("File saved at " + filePath);
   }
 });
+
+document.addEventListener("drop",(e)=>{
+  e.preventDefault();
+  e.stopPropagation();
+  for (let f of e.dataTransfer.files) {
+    console.log('File(s) you dragged here: ', f.path)
+  }
+})
+
+document.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
+
+document.addEventListener('dragenter', (event) => {
+  console.log('File is in the Drop Space');
+});
+
+document.addEventListener('dragleave', (event) => {
+  console.log('File has left the Drop Space');
+});

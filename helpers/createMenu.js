@@ -79,6 +79,7 @@ function createMenu(mainWindow) {
       submenu: [
         { role: "minimize" },
         { role: "zoom" },
+        {role: "toggledevtools"},
         ...(isWindows
           ? [{ type: "separator" }, { role: "front" }]
           : [{ role: "close" }]),

@@ -1,5 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
-const createMenu = require("./helpers/createMenu");
+const createMenu = require("./helpers/createMenu.js");
 const path = require("path");
 const saveFile = require("./helpers/saveFile");
 let mainWindow;
